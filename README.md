@@ -16,7 +16,7 @@ repo init -u https://github.com/HorizonDroidLab/manifest.git -b 14 --git-lfs
 Then sync up:
 
 ```bash
-repo sync
+repo sync -c --force-sync --no-tags --no-clone-bundle -j10 --optimized-fetch --prune
 ```
 
 Building the System
